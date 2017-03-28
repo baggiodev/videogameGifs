@@ -14,12 +14,12 @@ function displaygameInfo() {
             console.log("testing");
             console.log(response);
             var results = response.data;
-            var wholediv = $("<div id='wholediv'>")
+            var wholediv = $("<div id='wholediv'>");
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div class='gifgame'>");
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
-                var gameImage = $("<img>")
+                var gameImage = $("<img>");
                 gameImage.attr("src", results[i].images.fixed_height_still.url);
                 gameImage.attr('data-still', results[i].images.fixed_height_still.url);
                 gameImage.attr('data-animate', results[i].images.fixed_height.url);
@@ -69,5 +69,5 @@ function animate() {
     }
 }
 $(document).on("click", ".game", displaygameInfo);
-$(document).on("click", ".gameImage", animate)
+$(document).on("click", ".gameImage", animate);
 renderButtons();
