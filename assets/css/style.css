@@ -1,0 +1,33 @@
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+    .gifgame {
+      float:left;
+      background:#F8F5E4;
+      padding:5px 20px;
+      color:black;
+      border:10px solid white;
+      border-radius: 5px
+    }
+    #wholediv {
+      width:75%;
+    }
+    #game-form{
+      float:right;
+    }
+    button{
+      background:#274170
+      color:white;
+      font-size: 16px
+    }
+    body{
+      background:url("../images/background.png");
+      color:white;
+    }
+    #game-input{
+      display: inline;
+      width: 300px;
+    }
